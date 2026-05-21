@@ -3,68 +3,26 @@ import { SeasonalHoverCards } from "@/components/lightswind/seasonal-hover-cards
 export default function Projects() {
   const projects = [
     {
-      title: "Backend Migration",
-      subtitle: "Java · SpringBoot · REST · SQL · GitLab CI/CD",
+      title: "Unstructured Data Processing",
+      subtitle: "Python · Data Extraction · Data Cleaning · Standardization · Quality Control",
       description:
-        "Migrated a production backend from Django to Java Spring, redesigned the architecture for scalability, optimized REST APIs, implemented unit testing with JUnit and Mockito, and improved performance using Redis caching and efficient data structures.",
-      imageSrc: "/images/projects/edf.jpg",
+        "Coordinated the development of a Python-based tool for extracting and standardizing data from PDFs and web sources. The project aimed to convert fragmented, unstructured information into reliable datasets ready for analysis and decision-making.",
+      imageSrc: "/images/projects/arcep.png",
     },
     {
-      title: "HMI Design and Development",
-      subtitle: "C++ · C# · .NET · Git",
+      title: "Financial Risk & Portfolio Optimization",
+      subtitle: "Python · VaR · Sharpe Ratio · Efficient Frontier · Monte Carlo",
       description:
-        "Developed a C++ security library with unit tests using Google Test, designed HMI architecture, participated in code reviews, and implemented new features in C# and .NET within an industrial software environment.",
-      imageSrc: "/images/projects/fives.jpg",
+        "Built a Python-based analysis of a multi-asset portfolio, combining risk-return metrics, Value-at-Risk methods, drawdown analysis, and mean-variance optimization to construct minimum-variance and maximum-Sharpe portfolios.",
+      imageSrc: "/images/projects/finance-risk2.png",
     },
     {
-      title: "Cloud-Native Microservices Platform",
-      subtitle: "TypeScript · Flask · REST · gRPC · GraphQL",
+      title: "Probabilistic Graphical Modeling — LDPC Codes",
+      subtitle: "Python · pgmpy · Factor Graphs · Belief Propagation · Error-Correcting Codes",
       description:
-        "Built a cloud-native platform composed of multiple microservices exposing REST, gRPC, and GraphQL APIs. Deployed behind an API Gateway with load balancing and rate limiting, documented APIs with OpenAPI, and automated CI/CD pipelines via GitLab.",
-      imageSrc: "/images/projects/microservices.jpg",
-    },
-    {
-      title: "Kubernetes Deployment on GCP",
-      subtitle: "Docker · Kubernetes · Terraform · GCP",
-      description:
-        "Containerized services using Docker, orchestrated deployments with Kubernetes, and provisioned cloud infrastructure on Google Cloud Platform using Terraform, following Infrastructure as Code best practices.",
-      imageSrc: "/images/projects/kubernetes.jpg",
-    },
-    {
-      title: "Real-Time Web Application",
-      subtitle: "React · TypeScript · Express · WebSockets",
-      description:
-        "Developed a real-time web application with WebSockets for live broadcasting and playlist management, including a recommendation system. Built a modern frontend with React, Tailwind CSS, and secure user authentication.",
-      imageSrc: "/images/projects/webapp.jpg",
-    },
-    {
-      title: "Object-Oriented Programming",
-      subtitle: "Java · C++ · UML · Design Patterns · JUnit",
-      description:
-        "Designed UML diagrams, implemented relevant Design Patterns, collaborated effectively using Git, and ensured quality via unit testing (JUnit).",
-      imageSrc: "/images/projects/java.jpg",
-    },
-    {
-      title: "PHP Web Application",
-      subtitle: "PHP · Symfony · Bootstrap",
-      description:
-        "Developed a web application in PHP with Symfony allowing authors to submit articles and manage content, and designed separate views for admin and user roles, with authentication and role-based access control.",
-      imageSrc: "/images/projects/php.jpg",
-    },
-    {
-      title: "Elasticsearch Analytics Platform",
-      subtitle: "Elasticsearch · Kibana",
-      description:
-        "Designed Elasticsearch index mappings, optimized complex search queries and aggregations, and built visualization dashboards in Kibana to analyze and monitor structured datasets.",
-      imageSrc: "/images/projects/elasticsearch.jpg",
-    },
-    {
-      title: "Air Pollution Estimation with Neural Networks",
-      subtitle: "Neural Networks · Python · TensorFlow · Pandas",
-      description:
-        "Independently studied artificial neural networks, built and optimized a prediction model, and trained it on air pollution data collected in Paris to estimate pollution levels.",
-      imageSrc: "/images/projects/ai.jpg",
-    },
+        "Modeled and decoded Low-Density Parity-Check codes using probabilistic graphical models. The project included factor graph construction from parity-check matrices, Binary Symmetric Channel likelihoods, Loopy Belief Propagation, comparison with exact inference, and Bit Error Rate analysis under different noise levels.",
+      imageSrc: "/images/projects/pgm-ldpc2.png",
+    }
   ];
 
   const projectGroups = [];

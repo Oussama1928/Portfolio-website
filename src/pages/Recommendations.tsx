@@ -49,7 +49,7 @@ export default function Recommendations() {
             >
               {/* Card */}
               <a href={rec.pdf} download className="shrink-0">
-                <InteractiveCard InteractiveColor={rec.color}>
+                <InteractiveCard InteractiveColor={rec.color} showDownloadIcon={true}>
                   <img
                     src={rec.logo}
                     alt={`${rec.company} logo`}

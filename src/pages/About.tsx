@@ -4,25 +4,28 @@ import GradientText from "@/components/ui/GradientText";
 
 export default function AboutPage() {
   const images = [
-    { src: "/images/about/1.jpg" },
-    { src: "/images/about/2.jpg" },
-    { src: "/images/about/3.jpg" },
-    { src: "/images/about/4.jpg" },
-    { src: "/images/about/5.jpg" },
-    { src: "/images/about/6.jpg" },
-    { src: "/images/about/7.jpg" },
-    { src: "/images/about/8.jpg" },
-    { src: "/images/about/9.jpg" },
-    { src: "/images/about/10.jpg" },
-    { src: "/images/about/11.jpg" },
-    { src: "/images/about/12.jpg" },
-    { src: "/images/about/13.jpg" },
-    { src: "/images/about/14.jpg" },
-    { src: "/images/about/15.jpg" },
-    { src: "/images/about/16.jpg" },
-    { src: "/images/about/17.jpg" },
-    { src: "/images/about/18.jpg" },
-    { src: "/images/about/19.jpg" },
+    { src: "/images/about/1.jpeg" },
+    { src: "/images/about/2.jpeg" },
+    { src: "/images/about/3.jpeg" },
+    { src: "/images/about/4.jpeg" },
+    { src: "/images/about/5.jpeg" },
+    { src: "/images/about/6.jpeg" },
+    { src: "/images/about/7.jpeg" },
+    { src: "/images/about/8.jpeg" },
+    { src: "/images/about/9.jpeg" },
+    { src: "/images/about/10.jpeg" },
+    { src: "/images/about/11.jpeg" },
+    { src: "/images/about/12.jpeg" },
+    { src: "/images/about/13.jpeg" },
+    { src: "/images/about/14.jpeg" },
+    { src: "/images/about/15.jpeg" },
+    { src: "/images/about/16.jpeg" },
+    { src: "/images/about/17.jpeg" },
+    { src: "/images/about/18.jpeg" },
+    { src: "/images/about/19.jpeg" },
+    { src: "/images/about/20.jpeg" },
+    { src: "/images/about/21.jpeg" },
+    { src: "/images/about/22.jpeg" },
 ];
 
   return (
@@ -38,11 +41,11 @@ export default function AboutPage() {
         {/* Paragraph */}
         <FadeIn delay={150}>
           <p className="font-playfair text-lg md:text-xl text-center text-black/70 max-w-3xl mx-auto leading-relaxed mb-20">
-            "Outside of software engineering, I’m deeply passionate about music and sports.
-            I enjoy music mixing and DJing.
-            Sports are also an essential part of my life, especially football, fitness,
-            and tennis, which help me stay disciplined and energized.
-            I also love traveling and discovering new cultures, places, and perspectives."
+            "Outside of academics, I enjoy staying active through sports, especially fitness and cheerleading, which help me build discipline, energy, and team spirit.
+            I also love traveling and discovering new cultures, places, and perspectives, as it constantly pushes me to adapt, stay curious, and see problems from different angles.
+            I have a particular interest in visiting museums and seeing paintings that have shaped art history.
+            Logic puzzles are another passion of mine, strengthening my patience, pattern recognition, and problem-solving mindset."
+
             <br /><br />
         <GradientText
         className="text-xl md:text-2xl"

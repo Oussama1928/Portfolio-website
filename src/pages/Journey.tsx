@@ -3,34 +3,38 @@ import type { TimelineEvent } from "@/components/lightswind/scroll-timeline";
 
 const journeyEvents: TimelineEvent[] = [
   {
-    year: "2016 - 2020",
-    title: "Mathematics & Physics Student",
-    subtitle: "Pioneer School, Tunisia",
-    description: "During these years, I studied advanced mathematics and physics while also starting to explore software development. I successfully passed my Baccalauréat with an outstanding score of 18.63/20."
+    year: "2018 - 2022",
+    title: "Scientific Baccalaureate — Mathematics & Physics",
+    subtitle: "Pioneer High School, Tunis, Tunisia",
+    description: "Focused on advanced mathematics and physics, building a strong analytical foundation and a rigorous problem-solving approach. Graduated with an outstanding Baccalaureate score of 18.12/20."
   },
   {
-    year: "2020 - 2022",
-    title: "Preparatory School Student",
-    subtitle: "IPEST, Tunisia",
-    description: "I enrolled in intensive preparatory classes focusing on mathematics, physics, computer science, and artificial intelligence. I successfully passed the Mines Ponts competitive exams, preparing me for engineering school admission."
+  year: "2022 - 2024",
+  title: "Intensive Preparatory Classes — PCSI–PSI*",
+  subtitle: "IPEST, Tunis, Tunisia",
+  description:
+    "Completed a highly selective two-year program with intensive training in mathematics, physics, and engineering sciences. Ranked 22nd nationally in Tunisia, admitted to the Mines-Ponts and Centrale competitive examination banks, and ranked as a top admissible candidate for CCINP."
   },
   {
-    year: "2022 - 2025",
-    title: "Engineering Student",
-    subtitle: "IMT Atlantique, France",
-    description: "At IMT Atlantique, one of the top engineering schools in France, I specialized in software engineering, covering a wide range of lessons in programming, cloud computing, artificial intelligence, and big data."
+  year: "2024 - 2027",
+  title: "Engineering Student — Optimization, Data & Finance",
+  subtitle: "IMT Atlantique, Nantes, France",
+  description:
+    "Pursuing a Grande École engineering degree focused on optimization, statistics, stochastic modeling, and numerical methods, with an orientation toward quantitative finance and risk analysis. I also completed online finance courses from Yale and Caltech on financial markets, derivatives, stochastic processes, and option pricing."
   },
   {
-    year: "2024",
-    title: "Fullstack Engineer Intern",
-    subtitle: "Fives Stein",
-    description: "During my internship, I developed a C++ security library with unit tests using Google Test. I contributed to designing the HMI architecture, participated in code reviews, and developed new features in C# and .NET."
+  year: "Jun. 2025 - Jul. 2025",
+  title: "Financial Analyst Intern",
+  subtitle: "CPSCL, Tunis, Tunisia",
+  description:
+    "Contributed to the financial and environmental assessment of municipal infrastructure projects, analyzing profitability, economic viability, and climate resilience. I also supported the evaluation of local authorities’ financial performance through retrospective analysis and return projections."
   },
   {
-    year: "2025",
-    title: "Backend Engineer Intern",
-    subtitle: "EDF",
-    description: "I worked on migrating the backend from Django to Java Spring, redesigned the architecture, and optimized REST APIs for performance and scalability. I implemented unit testing with JUnit and Mockito, managed code coverage via JaCoCo, deployed a CI/CD pipeline with GitLab, updated the frontend in TypeScript and Vue.js, and leveraged Redis for caching to improve performance."
+  year: "Jan. 2026 - Jun. 2026",
+  title: "Exchange Semester — Finance & Data Science",
+  subtitle: "Universitat Pompeu Fabra, Barcelona, Spain",
+  description:
+    "Selected for an academic exchange focused on finance and data science, with coursework in international finance, banking and financial institutions, financial economics, probabilistic graphical models, and deep learning."
   },
 ];
 

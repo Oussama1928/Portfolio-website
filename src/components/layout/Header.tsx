@@ -14,7 +14,8 @@ export default function Header() {
     journey: "/journey",
     projects: "/projects",
     skills: "/skills",
-    recommendations: "/recommendations",
+    //recommendations: "/recommendations",
+    extracurriculars: "/extracurriculars",
     about: "/about",
   };
 
@@ -26,10 +27,10 @@ export default function Header() {
           {/* LEFT — Name */}
           <div className="flex items-center gap-3 mr-6">
             <div className="w-9 h-9 rounded-full bg-gradient-to-br from-pink-500 to-indigo-500 flex items-center justify-center text-white font-bold">
-              O
+              E
             </div>
             <span className="font-semibold tracking-wide text-white">
-              Oussama Ben Slima
+              Eya BEN SAID
             </span>
           </div>
 
@@ -41,7 +42,8 @@ export default function Header() {
                 { id: "journey", label: "Journey", href: "/journey" },
                 { id: "projects", label: "Projects", href: "/projects" },
                 { id: "skills", label: "Skills", href: "/skills" },
-                { id: "recommendations", label: "Recommendations", href: "/recommendations" },
+                //{ id: "recommendations", label: "Recommendations", href: "/recommendations" },
+                { id: "extracurriculars", label: "Extracurriculars", href: "/extracurriculars" },
                 { id: "about", label: "About Me", href: "/about" },
               ]}
               activeLink={activeLink}

@@ -80,7 +80,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     <p className="text-center mb-10 italic">
     You can also check my{" "}
     <a
-        href="https://github.com/Oussama1928"
+        href="https://github.com/bensaii23"
         target="_blank"
         rel="noopener noreferrer"
         className="text-cyan-500 font-bold underline"
@@ -89,7 +89,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     </a>{" "}
     and{" "}
     <a
-        href="https://www.linkedin.com/in/oussama-ben-slima/"
+        href="https://www.linkedin.com/in/eyabensaid/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-cyan-500 font-bold underline"

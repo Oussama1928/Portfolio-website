@@ -1,5 +1,10 @@
 import { useRef, useState } from "react";
-import { motion, useMotionValue, useTransform, useMotionTemplate } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  useMotionTemplate,
+} from "framer-motion";
 import { cn } from "../../lib/utils";
 import { FiDownload } from "react-icons/fi";
 
@@ -12,6 +17,7 @@ export const InteractiveCard = ({
   transitionDuration = 0.35,
   transitionEasing = "easeOut",
   tailwindBgClass = "bg-white",
+  showDownloadIcon = true,
 }: {
   children: React.ReactNode;
   className?: string;
@@ -21,6 +27,7 @@ export const InteractiveCard = ({
   transitionDuration?: number;
   transitionEasing?: string;
   tailwindBgClass?: string;
+  showDownloadIcon?: boolean;
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -28,8 +35,14 @@ export const InteractiveCard = ({
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const rotateX = useTransform(y, [0, 1], [rotationFactor * 14, -rotationFactor * 14]);
-  const rotateY = useTransform(x, [0, 1], [-rotationFactor * 14, rotationFactor * 14]);
+  const rotateX = useTransform(y, [0, 1], [
+    rotationFactor * 14,
+    -rotationFactor * 14,
+  ]);
+  const rotateY = useTransform(x, [0, 1], [
+    -rotationFactor * 14,
+    rotationFactor * 14,
+  ]);
 
   const handlePointerMove = (e: React.PointerEvent) => {
     const bounds = cardRef.current?.getBoundingClientRect();
@@ -39,8 +52,8 @@ export const InteractiveCard = ({
     y.set((e.clientY - bounds.top) / bounds.height);
   };
 
-  const xPct = useTransform(x, v => `${v * 100}%`);
-  const yPct = useTransform(y, v => `${v * 100}%`);
+  const xPct = useTransform(x, (v) => `${v * 100}%`);
+  const yPct = useTransform(y, (v) => `${v * 100}%`);
 
   const interactiveBg = useMotionTemplate`
     radial-gradient(
@@ -87,14 +100,19 @@ export const InteractiveCard = ({
           }}
         />
 
-        {/* PDF icon */}
-        <motion.div
-          className="absolute top-4 right-4 z-20 text-gray-900"
-          initial={{ opacity: 0, y: -6 }}
-          animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : -6 }}
-        >
-          <FiDownload size={20} />
-        </motion.div>
+        {/* Optional download icon */}
+        {showDownloadIcon && (
+          <motion.div
+            className="absolute top-4 right-4 z-20 text-gray-900"
+            initial={{ opacity: 0, y: -6 }}
+            animate={{
+              opacity: isHovered ? 1 : 0,
+              y: isHovered ? 0 : -6,
+            }}
+          >
+            <FiDownload size={20} />
+          </motion.div>
+        )}
 
         {/* Content */}
         <div

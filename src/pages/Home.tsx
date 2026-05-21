@@ -24,29 +24,29 @@ export default function Home() {
       <div className="relative z-10 px-10 pt-32 text-white flex items-start gap-55">
         <div className="max-w-xl flex flex-col gap-4">
           <h1 className="text-6xl md:text-7xl font-bold font-playfair">
-            Hi, I’m Oussama
+            Hi, I’m Eya
           </h1>
           <h2 className="text-2xl md:text-3xl font-playfair text-white/80">
-            Welcome to my portfolio
+            Engineering Student in Optimization, Data & Finance
           </h2>
         </div>
 
         <div className="mt-10 w-96 h-96 md:w-[28rem] md:h-[28rem] relative group">
           <img
-            src="/images/MyPhoto.jpg"
-            alt="Oussama"
+            src="/images/MyPhoto.JPG"
+            alt="Eya"
             className="w-full h-full object-cover rounded-3xl transition-all duration-500 group-hover:blur-sm"
           />
           <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-black/50 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
             <p className="text-white text-center px-6 font-playfair text-lg md:text-xl">
-              Hi! I’m Oussama, a full-stack engineer passionate about building modern, performant and scalable applications.
+              Hi! I’m Eya, an engineering student passionate about data-driven finance, risk analysis, and quantitative modeling.
             </p>
           </div>
 
             <p className="mt-2 text-center text-base italic font-playfair text-white">
               <a
-                href="/pdf/CV Oussama BEN SLIMA - Software Engineer.pdf"
-                download="CV Oussama BEN SLIMA - Software Engineer.pdf"
+                href="/pdf/Eya BEN SAID CV - Alternance.pdf"
+                download="Eya BEN SAID CV - Alternance.pdf"
                 className="underline transition cursor-pointer"
               >
                 Download my CV
@@ -58,20 +58,18 @@ export default function Home() {
       {/* Rotating adjectives */}
     <div className="absolute bottom-40 left-4 md:left-8 lg:left-12 flex flex-wrap items-center">
     <span className="text-2xl md:text-3xl lg:text-4xl font-sans font-semibold text-white mr-2">
-        I Design and Build
+        I Bridge Models And
     </span>
 
     <RotatingText
         texts={[
-        "Scalable",
-        "Resilient",
-        "Robust",
-        "Performant",
-        "Clean",
-        "Reliable",
-        "Modular",
-        "Modern",
-        "Innovative",
+        "Markets",
+        "Decisions",
+        "Strategy",
+        "Risk",
+        "Reality",
+        "Business",
+        "Data",
         ]}
         mainClassName="text-2xl md:text-3xl lg:text-4xl font-playfair font-semibold italic text-pink-400"
         staggerFrom="first"
@@ -87,7 +85,7 @@ export default function Home() {
     />
 
     <span className="text-2xl md:text-3xl lg:text-4xl font-sans font-semibold text-white ml-2">
-        Systems
+        
     </span>
     </div>
     </section>
