@@ -20,8 +20,15 @@ export default function Projects() {
       title: "Probabilistic Graphical Modeling — LDPC Codes",
       subtitle: "Python · pgmpy · Factor Graphs · Belief Propagation · Error-Correcting Codes",
       description:
-        "Modeled and decoded Low-Density Parity-Check codes using probabilistic graphical models. The project included factor graph construction from parity-check matrices, Binary Symmetric Channel likelihoods, Loopy Belief Propagation, comparison with exact inference, and Bit Error Rate analysis under different noise levels.",
+        "Analyzed Disney’s foreign exchange exposure by focusing on three international subsidiaries and identifying the relevant risk profile for each currency. The project distinguished between transaction, translation, and economic exposure, compared hedging instruments such as forwards, futures, options, and money market hedges, and proposed appropriate hedging approaches for each currency exposure.",  
       imageSrc: "/images/projects/pgm-ldpc2.png",
+    },
+    {
+      title: "FX Hedging Strategy for Disney",
+      subtitle: "International Finance · FX Risk · Hedging · Derivatives · Risk Management",
+      description:
+        "Analyzed Disney’s foreign exchange exposure and developed a hedging strategy by distinguishing between transaction, translation, and economic exposure. The project compared forwards, futures, options, and money market hedges, and proposed appropriate hedging approaches for each type of risk.",
+      imageSrc: "/images/projects/disney-hedging.png",
     }
   ];
 
