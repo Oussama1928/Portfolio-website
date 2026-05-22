@@ -41,7 +41,7 @@ export default function Header() {
                 { id: "home", label: "Home", href: "/" },
                 { id: "journey", label: "Journey", href: "/journey" },
                 { id: "projects", label: "Projects", href: "/projects" },
-                { id: "skills", label: "Skills", href: "/skills" },
+                //{ id: "skills", label: "Skills", href: "/skills" },
                 //{ id: "recommendations", label: "Recommendations", href: "/recommendations" },
                 { id: "extracurriculars", label: "Extracurriculars", href: "/extracurriculars" },
                 { id: "about", label: "About Me", href: "/about" },

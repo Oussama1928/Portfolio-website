@@ -17,6 +17,13 @@ export default function Projects() {
       imageSrc: "/images/projects/finance-risk2.png",
     },
     {
+      title: "FX Hedging Strategy for Disney",
+      subtitle: "International Finance · FX Risk · Hedging · Derivatives · Risk Management",
+      description:
+        "Analyzed Disney’s foreign exchange exposure and developed a hedging strategy by distinguishing between transaction, translation, and economic exposure. The project compared forwards, futures, options, and money market hedges, and proposed appropriate hedging approaches for each type of risk.",
+      imageSrc: "/images/projects/disney-hedging.png",
+    },
+    {
       title: "Probabilistic Graphical Modeling — LDPC Codes",
       subtitle: "Python · pgmpy · Factor Graphs · Belief Propagation · Error-Correcting Codes",
       description:
@@ -24,11 +31,11 @@ export default function Projects() {
       imageSrc: "/images/projects/pgm-ldpc2.png",
     },
     {
-      title: "FX Hedging Strategy for Disney",
-      subtitle: "International Finance · FX Risk · Hedging · Derivatives · Risk Management",
-      description:
-        "Analyzed Disney’s foreign exchange exposure and developed a hedging strategy by distinguishing between transaction, translation, and economic exposure. The project compared forwards, futures, options, and money market hedges, and proposed appropriate hedging approaches for each type of risk.",
-      imageSrc: "/images/projects/disney-hedging.png",
+    title: "Operations Research Optimization with PuLP",
+    subtitle: "Linear Programming · Integer Programming · Operations Research · Python · PuLP",
+    description:
+      "Built a collection of optimization models using PuLP to solve classic operations research problems, including production planning, taxi assignment, facility location, electricity distribution, workshop scheduling, project selection, blending, and set covering. Each notebook includes the business context, mathematical formulation, PuLP implementation, and interpretation of the optimal solution.",
+    imageSrc: "/images/projects/pulp-optimization.png",
     }
   ];
 
