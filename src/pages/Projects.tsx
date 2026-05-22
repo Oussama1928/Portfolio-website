@@ -53,8 +53,7 @@ export default function Projects() {
         </h1>
         <p className="text-lg text-white/70 max-w-2xl">
           A selection of academic, professional, and personal projects showcasing
-          my experience in backend engineering, cloud-native systems, and full-stack
-          development.
+          my experience in data science, optimization, quantitative finance, and machine learning.
         </p>
       </div>
 

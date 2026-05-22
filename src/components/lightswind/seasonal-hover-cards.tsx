@@ -25,7 +25,7 @@ const SeasonCard = ({
   return (
     <div
       className={cn(
-        "group relative w-full md:w-1/3 h-[350px] lg:h-[450px] rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:w-2/3",
+        "group relative flex-1 min-w-0 h-[350px] lg:h-[450px] rounded-xl overflow-hidden shadow-lg transition-all duration-500 hover:flex-[2.5_1_0%]",
         className
       )}
     >
@@ -37,7 +37,7 @@ const SeasonCard = ({
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/60 group-hover:bg-black/80 transition-colors duration-200" />
+      <div className="absolute inset-0 bg-black/45 group-hover:bg-black/70 transition-colors duration-300" />
 
       {/* CONTENT */}
       <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
@@ -69,7 +69,7 @@ export function SeasonalHoverCards({
   className,
 }: SeasonalHoverCardsProps) {
   return (
-    <div className={cn("flex flex-wrap md:flex-nowrap gap-4 w-full px-4", className)}>
+    <div className={cn("flex gap-4 w-full px-4", className)}>
       {cards.map((card, index) => (
         <SeasonCard
           key={index}
