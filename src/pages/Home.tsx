@@ -1,4 +1,4 @@
-import FloatingLines from "@/components/background/FloatingLines";
+import ColorBends from "@/components/background/ColorBends";
 import RotatingText from "@/components/ui/RotatingText"; 
 
 export default function Home() {
@@ -8,15 +8,21 @@ export default function Home() {
       
       {/* BACKGROUND */}
       <div className="absolute inset-0 -z-10">
-        <FloatingLines
-          enabledWaves={['top', 'middle', 'bottom']}
-          lineCount={[10, 15, 20]}
-          lineDistance={[8, 6, 4]}
-          bendRadius={5.0}
-          bendStrength={-0.5}
-          interactive={true}
-          parallax={true}
-          linesGradient={['#E947F5', '#2F4BA2']}
+        <ColorBends
+          rotation={90}
+          speed={0.2}
+          colors={["#020617", "#0B1120", "#172554", "#1E3A8A", "#7F1D1D"]}
+          transparent={false}
+          autoRotate={0}
+          scale={1}
+          frequency={1}
+          warpStrength={1}
+          mouseInfluence={1}
+          parallax={0.5}
+          noise={0.03}
+          iterations={1}
+          intensity={1}
+          bandWidth={5}
         />
       </div>
 
@@ -68,10 +74,9 @@ export default function Home() {
         "Strategy",
         "Risk",
         "Reality",
-        "Business",
         "Data",
         ]}
-        mainClassName="text-2xl md:text-3xl lg:text-4xl font-playfair font-semibold italic text-pink-400"
+        mainClassName="text-2xl md:text-3xl lg:text-4xl font-playfair font-semibold italic text-fuchsia-400"
         staggerFrom="first"
         initial={{ y: "100%", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
