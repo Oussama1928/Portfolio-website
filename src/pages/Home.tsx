@@ -39,7 +39,7 @@ export default function Home() {
 
         <div className="mt-10 w-96 h-96 md:w-[28rem] md:h-[28rem] relative group">
           <img
-            src="/images/MyPhoto.JPG"
+            src="/images/MyPhoto.jpg"
             alt="Eya"
             className="w-full h-full object-cover rounded-3xl transition-all duration-500 group-hover:blur-sm"
           />

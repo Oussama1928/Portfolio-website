@@ -26,4 +26,5 @@ dist-ssr
 back/.env
 back/venv/
 back/__pycache__/
+.env
 .env.local

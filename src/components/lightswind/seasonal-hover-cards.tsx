@@ -41,7 +41,7 @@ const SeasonCard = ({
 
       {/* CONTENT */}
       <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
-        
+
         {/* TITLE + SUBTITLE */}
         <div className="space-y-1 transition-opacity duration-150 group-hover:opacity-0">
           <h2 className="text-xl font-bold text-white drop-shadow">

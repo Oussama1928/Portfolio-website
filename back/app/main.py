@@ -11,14 +11,17 @@ MAILGUN_DOMAIN = os.getenv("MAILGUN_DOMAIN")
 MAILGUN_API_KEY = os.getenv("MAILGUN_API_KEY")
 TO_EMAIL = os.getenv("TO_EMAIL")
 
-if not all([MAILGUN_DOMAIN, MAILGUN_API_KEY, TO_EMAIL]):
-    raise RuntimeError("Missing environment variables")
+DEV_MODE = not all([MAILGUN_DOMAIN, MAILGUN_API_KEY, TO_EMAIL])
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://oussama-benslima.onrender.com"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:4173",
+        "https://oussama-benslima.onrender.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -35,6 +38,10 @@ def root():
 
 @app.post("/contact")
 async def send_contact_message(form: ContactForm):
+    if DEV_MODE:
+        print(f"[DEV] Contact form received — name={form.name}, email={form.email}, message={form.message}")
+        return {"success": True, "message": "Message received (dev mode — email not sent)"}
+
     try:
         response = requests.post(
             f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages",
