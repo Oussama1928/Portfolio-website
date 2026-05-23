@@ -54,8 +54,10 @@ async def send_contact_message(form: ContactForm):
             }
         )
 
+        print(f"[MAILGUN] status={response.status_code} body={response.text}")
+
         if response.status_code != 200:
-            raise HTTPException(status_code=500, detail=response.text)
+            raise HTTPException(status_code=500, detail=f"Mailgun {response.status_code}: {response.text}")
 
         return {"success": True, "message": "Message sent successfully"}
 
