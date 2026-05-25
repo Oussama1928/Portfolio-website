@@ -31,12 +31,26 @@ export default function Projects() {
       imageSrc: "/images/projects/pgm-ldpc2.png",
     },
     {
-    title: "Operations Research Optimization with PuLP",
-    subtitle: "Linear Programming · Integer Programming · Operations Research · Python · PuLP",
-    description:
-      "Built a collection of optimization models using PuLP to solve classic operations research problems, including production planning, taxi assignment, facility location, electricity distribution, workshop scheduling, project selection, blending, and set covering. Each notebook includes the business context, mathematical formulation, PuLP implementation, and interpretation of the optimal solution.",
-    imageSrc: "/images/projects/pulp-optimization.png",
-    }
+      title: "Operations Research Optimization with PuLP",
+      subtitle: "Linear Programming · Integer Programming · Operations Research · Python · PuLP",
+      description:
+        "Built a collection of optimization models using PuLP to solve classic operations research problems, including production planning, taxi assignment, facility location, electricity distribution, workshop scheduling, project selection, blending, and set covering. Each notebook includes the business context, mathematical formulation, PuLP implementation, and interpretation of the optimal solution.",
+      imageSrc: "/images/projects/pulp-optimization.png",
+    },
+    {
+      title: "Deep Learning & Machine Learning Projects",
+      subtitle: "Python · PyTorch · CNNs · RNN/LSTM · GANs · VAEs · Model Evaluation",
+      description:
+        "Built and evaluated a range of machine learning and deep learning models across tabular, sequential, image, and generative tasks. Projects included breast cancer classification, RNN/LSTM signal classification, CNNs and transfer learning on house number images, VAE/GAN-based face generation, and facial emotion recognition. This work strengthened my understanding of model architectures, training pipelines, validation strategy, overfitting analysis, and performance evaluation.",
+      imageSrc: "/images/projects/deep learning.jpg",
+    },
+    {
+      title: "Power BI Data Analysis Dashboards",
+      subtitle: "Power BI · Data Cleaning · KPI Analysis · Data Visualization · Business Intelligence",
+      description:
+        "Built interactive Power BI dashboards to transform raw datasets into clear, structured, and decision-oriented insights. Projects included an inflysis dashboard, with a focus on data cleaning, transformation, KPI creation, trend analysis, and visual storytelling. This work strengthened my ability to design dashboards that make complex economic and business data easier to interpret and compare.",
+      imageSrc: "/images/projects/powerBI.jpg",
+    },
   ];
 
   const projectGroups = [];
