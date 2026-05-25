@@ -68,18 +68,25 @@ export function SeasonalHoverCards({
   cards,
   className,
 }: SeasonalHoverCardsProps) {
+  const padded: (SeasonCardProps | null)[] = [...cards];
+  while (padded.length % 3 !== 0) padded.push(null);
+
   return (
     <div className={cn("flex gap-4 w-full px-4", className)}>
-      {cards.map((card, index) => (
-        <SeasonCard
-          key={index}
-          title={card.title}
-          subtitle={card.subtitle}
-          description={card.description}
-          imageSrc={card.imageSrc}
-          imageAlt={card.imageAlt}
-        />
-      ))}
+      {padded.map((card, index) =>
+        card ? (
+          <SeasonCard
+            key={index}
+            title={card.title}
+            subtitle={card.subtitle}
+            description={card.description}
+            imageSrc={card.imageSrc}
+            imageAlt={card.imageAlt}
+          />
+        ) : (
+          <div key={index} className="flex-1 min-w-0 pointer-events-none" />
+        )
+      )}
     </div>
   );
 }
